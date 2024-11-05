@@ -38,7 +38,7 @@ function App() {
         key={char.id}
         name={char.name}
         homeplanet={char.homeworld}
-        className={'character-card'}
+        //className={'character-card'}
         />
       })
       }
