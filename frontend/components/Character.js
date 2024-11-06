@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-function Character({key,name,homeplanet}) { // ❗ Add the props
+function Character({name,homeplanet}) { // ❗ Add the props
   // ❗ Create a state to hold whether the homeworld is rendering or not
   const [worldName,showWorld]=useState(false)
   // ❗ Create a "toggle" click handler to show or remove the homeworld
