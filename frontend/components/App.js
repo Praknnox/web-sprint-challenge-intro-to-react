@@ -33,14 +33,16 @@ function App() {
       <h2>Star Wars Characters</h2>
       <p>See the README of the project for instructions on completing this challenge</p>
       {/* ❗ Map over the data in state, rendering a Character at each iteration */
-      charaData.map((char)=>(
+      charaData.map((char)=>
+      {const planet = plantData.find(pnom => pnom.id === char.homeworld);
+        const itsName = planet?planet.name:''
+        return (
         <Character
         key={char.id}
         name={char.name}
-        homeplanet={char.homeworld}
-        //className={'character-card'}
+        homeplanet={itsName}
         />
-      ))
+      )})
       }
     </div>
   )

@@ -8,11 +8,11 @@ function Character({name,homeplanet}) { // ❗ Add the props
     showWorld(show=>!show)
   }
   return (
-    <div className='character-card'>
+    <div className='character-card' onClick={toggel}>
       {/* Use the same markup with the same attributes as in the mock */
-      <h3 className='character-name'  onClick={toggel}>{name}
-      <p>Planet: <span className='character-planet'>{homeplanet}</span></p></h3>
-      }
+      <h3 className='character-name'  >{name}</h3>
+    }
+    {worldName&&(<p>Planet: <span className='character-planet'>{homeplanet}</span></p>)}
     </div>
   )
 }
