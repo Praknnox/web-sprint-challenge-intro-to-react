@@ -14,7 +14,7 @@ function App() {
     
       axios.get(urlPeople).then(res=>{
         setChData(res.data)
-        //console.log(charaData)
+      
       }).catch(err=>{
         console.log(err.message)
       })
